@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/calendarViewFragments">
+
+    <fragment
+        android:id="@+id/calendarViewFragments"
+        android:name="com.example.mvvmbasicapplication.ui.fragments.CalendarViewFragments"
+        android:label="CalendarViewFragments" >
+        <action
+            android:id="@+id/action_calendarViewFragments_to_budgetEntryFragments2"
+            app:destination="@id/budgetEntryFragments" />
+    </fragment>
+    <fragment
+        android:id="@+id/budgetEntryFragments"
+        android:name="com.example.mvvmbasicapplication.ui.fragments.BudgetEntryFragments"
+        android:label="BudgetEntryFragments" >
+        <action
+            android:id="@+id/action_budgetEntryFragments_to_calendarViewFragments"
+            app:destination="@id/calendarViewFragments" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragments"
+        android:name="com.example.mvvmbasicapplication.ui.fragments.ProfileFragments"
+        android:label="ProfileFragments" >
+        <action
+            android:id="@+id/action_profileFragments_to_calendarViewFragments"
+            app:destination="@id/calendarViewFragments" />
+    </fragment>
+    <fragment
+        android:id="@+id/reportsFragments"
+        android:name="com.example.mvvmbasicapplication.ui.fragments.ReportsFragments"
+        android:label="ReportsFragments" />
+    <action android:id="@+id/action_global_profileFragments" app:destination="@id/profileFragments" />
+</navigation>

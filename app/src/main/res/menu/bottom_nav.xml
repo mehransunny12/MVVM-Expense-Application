@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Enter Budget"
+        android:icon="@drawable/ic_edit"
+        android:id="@+id/budgetEntryFragments"/>
+    <item
+        android:icon="@drawable/ic_file"
+        android:id="@+id/reportsFragments"
+        android:title="See Reports"/>
+
+</menu>
